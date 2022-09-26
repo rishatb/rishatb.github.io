@@ -27,6 +27,11 @@ h4 {
     font-weight: 700;
 }
 
+.light {
+    font-weight: 400;
+    color: #393f3f;
+}
+
 /* HEADER */
 .header {
     display: flex;
@@ -35,6 +40,7 @@ h4 {
     width: 100vw;
     position: fixed;
     padding: 30px 10%;
+    background-color: white;
 }
 
 .logo {
@@ -79,5 +85,19 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
+}
+
+/* SECOND ONE */
+.second_one {
+    padding: 0 10% 90px;
+}
+
+.block {
+    background-color: #DEFFD9;
+    padding: 90px 10%;
+}
+
+.block .center {
+    margin: 30px 0 0;
 }
