@@ -40,7 +40,7 @@ h4 {
     align-items: center;
     width: 100vw;
     position: fixed;
-    padding: 30px 10%;
+    padding: 30px 15%;
     background-color: white;
 }
 
@@ -91,7 +91,7 @@ h4 {
 
 /* SECOND ONE */
 .second_one {
-    padding: 0 10% 90px;
+    padding: 0 15% 90px;
 }
 
 .block {
@@ -105,34 +105,98 @@ h4 {
 
 /* THIRD ONE */
 .third_one {
-    padding: 0 10% 90px;
-
+    padding: 0 15% 90px;
 }
 
 .gallery {
     display: flex;
+    justify-content: space-between;
     padding: 90px 10%;
 
 }
 
 .third_one a{
-    width: fit-content;
+    text-decoration: underline;
+    color: #333333;
+}
+
+.third_one a:hover {
+    text-decoration: none;
+    color: #8EC286;
 }
 
 #h4_text {
-    margin: 30px 0 15px;
+    margin: 30px 90px 15px 0;
 }
 
 .third_one img {
     width: 19%;
-    margin-right: 60px;
+    margin-left: 60px;
     border: 1px solid #333333;
+    transition: 3s;
 }
 
+/* .third_one img::before {
+    content: attr(data-next-text);
+    position: absolute;
+    transform: translate(0%, 380px);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  } */
+
+/* .third_one img::after {
+    content: attr();
+    position: absolute;
+    transform: translate(0%, -380px);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  } */
+
 .buttons {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .buttons button {
     padding: 10px 30px;
+}
+
+/* FIFTH ONE */
+.forth_one {
+    width: 100%;
+    background-color: #333333;
+    padding: 90px 22%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 90px;
+}
+
+form {
+    /* display: block; */
+}
+
+input {
+    padding: 30px;
+    width: 100%;
+}
+
+input.margin_top {
+    margin-top: 15px;
+}
+
+.text h2 {
+    color: white;
+}
+
+.text h4 {
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: white;
 }
