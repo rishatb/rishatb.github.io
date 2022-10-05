@@ -259,35 +259,50 @@ body {
     padding: 10px 30px;
 }
 
-/* FIFTH ONE */
+/* FORTh ONE */
 .forth_one {
     width: 100%;
     background-color: #333333;
-    padding: 90px 22%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 90px;
+    
 }
 
-form {
-    /* display: block; */
+.contacts {
+    margin: 0 auto;
+    max-width: 1320px;
+    padding: 90px 60px 120px;
 }
 
-input {
-    padding: 30px;
-    width: 100%;
+.list_of_contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
 }
 
-input.margin_top {
-    margin-top: 15px;
+.list {
+    display: flex;
 }
 
-.text h2 {
-    color: white;
+.email {
+    margin-right: 30px;
 }
 
-.text h4 {
-    font-weight: 200;
-    letter-spacing: 1px;
+.email h3 {
+    color: #EBEBEB;
+    padding: 15px 60px;
+    border-radius: 50px;
+    border: 1px solid #EBEBEB;
+}
+
+.icon i{
+    font-size: 67px;
+    color: #EBEBEB;
+}
+
+.icon_center {
+    margin: 0 15px;
+}
+
+.forth_one h2 {
     color: white;
 }
