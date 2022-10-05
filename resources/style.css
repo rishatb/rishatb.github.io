@@ -10,6 +10,12 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: 4px;
+}
+
 h2 {
     font-size: 2em;
 }
@@ -33,14 +39,22 @@ h4 {
     color: #393f3f;
 }
 
+/* BODY */
+body {
+    
+}
+
 /* HEADER */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 1200px;
+    /* padding: 290px 60px 30px; */
+
     position: fixed;
-    padding: 30px 15%;
+    padding: 30px 0;
+    /* padding: 30px 10%; */
     background-color: white;
 }
 
@@ -84,24 +98,101 @@ h4 {
 /* FIRST_ONE */
 .first_one {
     display: flex;
-    justify-content: center;
+    /* justify-content:space-between; */
     align-items: center;
-    height: 90vh;
+    /* height: 90vh; */
+
+    margin: 0 auto;
+    max-width: 1320px;
+    padding: 290px 60px 30px;
 }
+
+.first_one img {
+    width: 356px;
+    border-radius: 90px;
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .first_one img {
+        width: 240px;
+        border-radius: 60px;
+    }
+
+    h1 {
+        font-size: 80px;
+        line-height: 75px;
+    }
+}
+
+@media only screen and (max-width: 1054px) {
+    .first_one img {
+        width: 200px;
+        border-radius: 50px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .first_one  {
+        padding-top: 250px;
+        display: block;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .first_one  {
+        padding: 120px 5% 120px;
+    }
+}
+
 
 /* SECOND ONE */
 .second_one {
-    padding: 0 15% 90px;
+    margin: 0 auto;
+    max-width: 1320px;
+    padding: 0 60px;
 }
 
 .block {
     background-color: #DEFFD9;
-    padding: 90px 10%;
+    padding: 90px;
+    border-radius: 90px;
 }
 
 .block .center {
     margin: 30px 0 0;
 }
+
+
+@media only screen and (max-width: 950px) {
+    .block  {
+        padding: 60px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .second_one {
+        margin: 0 auto;
+        padding: 0;
+    }    
+    
+    .block  {
+        padding: 60px 5%;
+        border-radius: 60px;
+    }
+}
+
+
 
 /* THIRD ONE */
 .third_one {
