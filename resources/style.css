@@ -50,6 +50,11 @@ body {
 }
 
 /* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -71,32 +76,15 @@ body {
     color: #8EC286;
 }
 
-.nav {
-    display: flex;
-}
 
-.nav li{
-    list-style: none;
-    margin-left: 30px;
-    color: #485050;
-}
-
-.nav li:hover {
-    color: #8EC286;
-}
-
-.nav li h4 {
-    font-weight: 400;
-}
-
-.bold.button {
+.button {
     color: white;
-    background-color: #333333;
-    padding: 11px 60px;
+    background-color: #202020;
+    padding: 11px 45px;
 }
 
-.bold.button:hover {
-    color: #333333;
+.button:hover {
+    color: #202020;
     background-color: #8EC286;
 }
 
@@ -119,6 +107,10 @@ body {
 }
 
 @media only screen and (max-width: 1320px) {
+    .first_one {
+        padding: 280px 5% 120px;
+    }
+    
     .first_one img {
         /* width: 200px; */
         /* border-radius: 60px; */
@@ -127,6 +119,10 @@ body {
     h1 {
         font-size: 80px;
         line-height: 75px;
+    }
+
+    .header {
+        width: 90%;
     }
 }
 
@@ -140,6 +136,7 @@ body {
         font-size: 40px;
         line-height: 35px;
     }
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -152,6 +149,7 @@ body {
         font-size: 40px;
         line-height: 35px;
     }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -195,8 +193,13 @@ body {
 
 @media only screen and (max-width: 1320px) {
     .line {
-        margin: 0 60px;
+        margin: 0 5%;
     }
+
+    .second_one {
+        padding: 0 5%;
+    }
+        
 }
 
 
@@ -274,6 +277,12 @@ body {
 
 .third_one .right {
     padding-top: 60px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .gallery {
+        padding: 120px 5% 60px;
+    }
 }
 
 @media only screen and (max-width: 950px) {
@@ -415,6 +424,12 @@ a.white {
 a.white:hover {
     color: #8EC286;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1320px) {
+    .contacts {
+        padding: 60px 5%;
+    }
 }
 
 @media only screen and (max-width: 1050px) {
