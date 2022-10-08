@@ -181,7 +181,7 @@ body {
 .line {
     background-color: #D9D9D9;
     max-width: 1200px;
-    padding: 0 60px;
+    /* padding: 0 60px; */
     margin: 0 auto;
 }
 
@@ -193,14 +193,20 @@ body {
     /* margin-bottom: 5px; */
 }
 
+@media only screen and (max-width: 1320px) {
+    .line {
+        margin: 0 60px;
+    }
+}
+
 
 @media only screen and (max-width: 950px) {
     .block  {
-        padding: 60px;
+        /* padding: 60px; */
     }
 
     .block  {
-        border-radius: 40px;
+        /* border-radius: 40px; */
     }
 }
 
@@ -213,6 +219,10 @@ body {
     .block  {
         padding: 60px 5%;
         border-radius: 30px;
+    }
+
+    .line {
+        margin: 0 5%;
     }
 }
 
@@ -324,7 +334,7 @@ body {
 .list_of_contacts {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     margin-top: 5px;
 }
 
@@ -390,6 +400,28 @@ a.white:hover {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 1050px) {
+    .list_of_contacts {
+        display: block;
+    }
+
+    .list {
+        margin-bottom: 15px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 900px) {
+    .list {
+        display: block;
+    }
+
+    .icons {
+        margin-top: 15px;
+    }
+}
+
 
 @media only screen and (max-width: 700px) {
     .list_of_contacts {
@@ -404,6 +436,16 @@ a.white:hover {
     .contacts {
         width: fit-content;
         /* justify-content: start; */
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    h3.nuna {
+        display: none;
+    }
+
+    a.icon.center {
         margin: 0;
     }
 }
