@@ -267,17 +267,20 @@ body {
     margin-right: 60px;
 }
 
+.mobile {
+    display: none;
+    /* width: 100%; */
+}
+
 .third_one .right {
     padding-top: 60px;
 }
 
 @media only screen and (max-width: 950px) {
-    .gallery {
-        display: block;
-    }
+
 
     .gallery img {
-        width: 200px;
+        width: 100%;
     }
 
     #h4_text {
@@ -285,9 +288,23 @@ body {
     }
 }
 
+@media only screen and (max-width: 850px) {
+    .gallery {
+        display: block;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .peka {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 550px) {
     .gallery {
-        padding: 60px 5% 0;
+        padding: 120px 5% 60px;
     }
 }
 
