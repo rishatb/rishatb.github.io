@@ -29,6 +29,18 @@ h4 {
     /* font-size: 25px; */
 }
 
+@media only screen and (max-width: 1200px) {
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.25em;
+        /* font-size: 25px; */
+    }
+}
+
 
 .bold {
     font-weight: 700;
@@ -53,6 +65,8 @@ body {
 header {
     display: flex;
     justify-content: center;
+    /* padding: 30px 0; */
+    background-color: white;
 }
 
 .header {
@@ -64,8 +78,13 @@ header {
 
     position: fixed;
     padding: 30px 0;
-    /* padding: 30px 10%; */
     background-color: white;
+    transition: .2s;
+}
+
+.header.sticky{
+    padding: 10px 0;
+    /* box-shadow: 0 5px 20px rgba(0,0,0,0.1); */
 }
 
 .logo {
