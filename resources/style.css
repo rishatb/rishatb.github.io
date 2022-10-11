@@ -287,7 +287,8 @@ header {
 .gallery {
     display: flex;
     justify-content: space-between;
-    padding: 120px 60px 60px;
+    padding: 60px;
+    /* padding: 120px 60px 60px; */
     margin: 0 auto;
     max-width: 1320px;
 }
@@ -322,12 +323,12 @@ header {
 }
 
 .third_one .right {
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 @media only screen and (max-width: 1320px) {
     .gallery {
-        padding: 120px 5% 60px;
+        padding: 60px 5% 60px;
     }
 }
 
@@ -335,7 +336,7 @@ header {
 
 
     .gallery img {
-        width: 100%;
+        width: 50%;
     }
 
     #h4_text {
@@ -359,7 +360,11 @@ header {
 
 @media only screen and (max-width: 550px) {
     .gallery {
-        padding: 120px 5% 60px;
+        padding: 60px 5% 60px;
+    }
+
+    .gallery img {
+        width: 100%;
     }
 }
 
@@ -392,7 +397,7 @@ header {
 /* FORTh ONE */
 .forth_one {
     width: 100%;
-    background-color: #202020;
+    background-color: #2B3149;
     margin-top: 60px;
 }
 
