@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     /* font-family: 'Oswald', sans-serif; */
-    font-family: 'Comfortaa', cursive;
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Pridi', serif;
     box-sizing: border-box;
     transition: .1s;
 }
@@ -11,16 +12,18 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    font-family: 'IBM Plex Mono', monospace;
+h1, span {
+    /* font-family: 'IBM Plex Mono', monospace; */
+    font-family: 'Vollkorn', serif;
     font-size: 80px;
     line-height: 70px;
     letter-spacing: 4px;
 }
 
 h2 {
-    font-family: 'IBM Plex Mono', monospace;
-
+    /* font-family: 'IBM Plex Mono', monospace; */
+    font-family: 'Vollkorn', serif;
+    color: #B85840;
     font-size: 2em;
 }
 
@@ -33,7 +36,8 @@ h4 {
     /* font-size: 25px; */
 }
 
-h2,h3,h4,h1 {
+h3,h4,h1 {
+/* h2,h3,h4,h1 { */
     letter-spacing: 1px;
     color: #2B3149;
 }
@@ -56,7 +60,7 @@ h2,h3,h4,h1 {
 }
 
 .light {
-    font-weight: 300;
+    font-weight: 200;
     /* color: black; */
     /* color: #2B3149; */
     letter-spacing: 1px;
@@ -96,12 +100,12 @@ header {
     /* box-shadow: 0 5px 20px rgba(0,0,0,0.1); */
 }
 
-.logo {
-    color: #2B3149;
+.logo h3, span{
+    color: #F48A32;
 }
 
-.logo:hover {
-    color: #FF9571;
+.logo h3:hover {
+    color: #B85840;
 }
 
 
@@ -113,7 +117,7 @@ header {
 
 .button:hover {
     color: #202020;
-    background-color: #FF9571;
+    background-color: #B85840;
 }
 
 @media only screen and (max-width: 650px) {
