@@ -23,7 +23,7 @@ h1, span {
 h2 {
     /* font-family: 'IBM Plex Mono', monospace; */
     font-family: 'Vollkorn', serif;
-    color: #B85840;
+    color: #F48A32;
     font-size: 2em;
 }
 
@@ -308,7 +308,7 @@ header {
 
 .third_one a:hover {
     text-decoration: none;
-    color: #FF9571;
+    color: #F48A32;
 }
 
 #h4_text {
@@ -461,7 +461,7 @@ header {
 }
 
 .icon:hover {
-    color: #FF9571;
+    color: #F48A32;
 }
 
 .icon_center {
@@ -478,7 +478,7 @@ a.white {
 }
 
 a.white:hover {
-    color: #FF9571;
+    color: #F48A32;
     text-decoration: none;
 }
 
