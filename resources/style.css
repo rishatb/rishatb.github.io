@@ -154,7 +154,7 @@ header {
         /* border-radius: 60px; */
     }
 
-    h1 {
+    h1, span {
         font-size: 80px;
         line-height: 75px;
     }
@@ -170,7 +170,7 @@ header {
         /* border-radius: 50px; */
     }
 
-    h1 {
+    h1 , span{
         font-size: 40px;
         line-height: 35px;
     }
@@ -183,7 +183,7 @@ header {
         display: block;
     }
 
-    h1 {
+    h1, span{
         font-size: 40px;
         line-height: 35px;
     }
