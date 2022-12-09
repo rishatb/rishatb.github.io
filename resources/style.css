@@ -23,7 +23,8 @@ h1, span {
 h2 {
     /* font-family: 'IBM Plex Mono', monospace; */
     font-family: 'Vollkorn', serif;
-    color: #F48A32;
+    /* color: #F48A32; */
+    color: #2B3149;
     font-size: 2em;
 }
 
@@ -101,7 +102,7 @@ header {
 }
 
 .logo h3, span{
-    color: #F48A32;
+    /* color: #F48A32; */
 }
 
 .logo h3:hover {
