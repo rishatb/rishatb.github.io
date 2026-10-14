@@ -1,120 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet"> -->
-
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
-
-    <!-- <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;500;700&display=swap" rel="stylesheet"> -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@300;400&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/b2528fcf94.js" crossorigin="anonymous"></script>
-
-    <title>Портфолио</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ришат Булатов — инженер-конструктор</title>
+<meta name="description" content="Ришат Булатов, инженер-конструктор, Москва. Проектирование нестандартного оборудования и оснастки, 3D-моделирование в КОМПАС-3D и Inventor, полный комплект КД по ГОСТ и ЕСКД.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<script>(function(d){d.classList.add('js');try{var t=localStorage.getItem('theme');if(t)d.dataset.theme=t;if(sessionStorage.getItem('loaded'))d.classList.add('seen');if(sessionStorage.getItem('trans'))d.classList.add('from-trans','seen')}catch(e){}})(document.documentElement)</script>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <a class="bold logo" href="#"><h3>RISHAT</h3></a>
-            <a href="#" class="button"><h3 class="light white">контакты</h3></a>    
-        </div>
-    </header>
+<a class="skip" href="#main">К содержанию</a>
+<div class="shutter" aria-hidden="true"></div>
+<div class="spot" aria-hidden="true"></div>
+<div class="cross" aria-hidden="true"><i class="cx"></i><i class="cy"></i><span class="coord mono"></span></div>
+<div class="progress" aria-hidden="true"></div>
 
-    <div class="first_one">
-        <img src="./resources/images/photo.png" alt="">
-        <h1>Привет, <br>
-            меня зовут Ришат <br>
-           я  <span>создаю сайты</span></h1>
+<div class="loader" aria-hidden="true">
+  <svg viewBox="0 0 200 124"><rect x="20" y="20" width="160" height="80" pathLength="1000"/><circle cx="62" cy="60" r="18" pathLength="1000"/><circle cx="138" cy="60" r="18" pathLength="1000"/><path class="axis" d="M8 60h184M62 6v108M138 6v108" pathLength="1000"/><path d="M20 118h160M20 113v10M180 113v10" pathLength="1000"/></svg>
+  <span class="mono">ЗАГРУЗКА ЧЕРТЕЖА… <b id="ldp">0</b>%</span>
+</div>
+
+<header class="nav"><div class="container nav-in">
+  <a href="#top" class="logo mono">[ Р.Б. ]</a>
+  <nav class="links" aria-label="Разделы">
+    <a href="#about">О себе</a><a href="#skills">Навыки</a><a href="#exp">Опыт</a><a href="#edu">Образование</a><a href="#contact">Контакты</a>
+  </nav>
+  <div class="nav-act">
+    <button class="theme-btn" id="theme" aria-label="Сменить тему (клавиша T)" title="Сменить тему (T)"><span></span></button>
+    <a href="portfolio.html" class="btn btn-sm magnetic" data-transition>Портфолио</a>
+  </div>
+</div></header>
+
+<main id="main">
+<section class="hero container" id="top">
+  <div class="hero-txt">
+    <p class="tag mono fade" style="--d:.1s">[ ЛИСТ 01 / РЕЗЮМЕ ]</p>
+    <h1 class="name" aria-label="Ришат Булатов"><span class="ln" data-split>Ришат</span><span class="ln" data-split>Булатов</span></h1>
+    <p class="role fade" style="--d:.5s">Инженер-конструктор · <span class="typed mono" id="typed" data-words='["3D-моделирование","КД по ГОСТ и ЕСКД","нестандартное оборудование","оснастка и инструмент"]'>3D-моделирование</span><span class="caret mono" aria-hidden="true">_</span></p>
+    <p class="lead fade" style="--d:.65s">Проектирую нестандартное оборудование и оснастку: от 3D-модели до полного комплекта КД по ГОСТ и ЕСКД. Больше 3 лет в инженерии: авиационная отрасль, специальное машиностроение, металлургия.</p>
+    <div class="hero-btns fade" style="--d:.8s">
+      <a href="portfolio.html" class="btn magnetic" data-transition>Смотреть портфолио <span class="arr" aria-hidden="true">→</span></a>
+      <button class="btn btn-ghost magnetic" id="print" type="button">Скачать PDF</button>
     </div>
+  </div>
+  <div class="hero-vis fade" style="--d:.4s">
+    <canvas id="gear" aria-hidden="true"></canvas>
+    <div class="vis-cap t mono"><span>ИЗОМЕТРИЯ</span><span>ПОТЯНИТЕ ↔</span></div>
+    <div class="vis-cap b mono"><span>z = 14</span><span>m = 2,5</span><span>Ø 70</span></div>
+  </div>
+  <a href="#about" class="scroll-hint mono" aria-label="Прокрутить вниз">scroll ↓</a>
+</section>
 
-    <hr class="line">
-
-    <div class="second_one">
-        <div class="block">
-            <h2 class="bold">ОБО МНЕ</h2>
-            <!-- <h3 class="bold center">Меня зовут Ришат</h3> -->
-            <h3 class="light">Мне 20 лет, обучаюсь в МГТУ им. Н.Э. Баумана, по образованию инженер. Помимо профильного образования обучаюсь на Fullstack-Developer курсе платформы Codecademy. Имею опыт в создании лендингов для различных проектов: портфолио, сайт личного бренда и тд.</h3>
-    
-            <h2 class="center">РАЗБИРАЮСЬ</h2>
-            <h3 class="light">Знаю HTML, CSS, JS , умею работать с VC Code, figma, Git, Github.</h3>
-
-            <div class="icons_block">
-                <img src="./resources/images/icons/css-3.png" alt="">
-                <img src="./resources/images/icons/js.png" alt="">
-                <img src="./resources/images/icons/git.png" alt="">
-                <img src="./resources/images/icons/github.png" alt="">
-                <img src="./resources/images/icons/figma.png" alt="">
-
-            </div>
-        </div>
+<section id="about" class="sec container">
+  <div class="sec-head reveal"><span class="mono">01</span><h2>О себе</h2><i></i></div>
+  <div class="about-grid">
+    <figure class="photo reveal"><img src="img/photo.jpg" alt="Ришат Булатов" width="445" height="500" loading="lazy"><figcaption class="mono"><span>ФОТО</span><span>М 1:1</span></figcaption></figure>
+    <div class="about-txt">
+      <p class="big reveal">Проектирую нестандартное оборудование под требования заказчика и веду изделие от модели до полного комплекта КД. Работал в авиационной отрасли, специальном машиностроении и металлургии, учёбу в МГТУ им. Баумана совмещал с работой.</p>
+      <div class="stats" data-stagger>
+        <div class="stat reveal"><b data-count="3" data-suffix="+">3+</b><span>года в инженерии</span></div>
+        <div class="stat reveal"><b data-count="3">3</b><span>отрасли: авиация, спецмаш, металлургия</span></div>
+        <div class="stat reveal"><b>МГТУ</b><span>им. Н. Э. Баумана, выпуск 2026</span></div>
+        <div class="stat reveal"><b>ЕСКД</b><span>полный комплект КД по ГОСТ</span></div>
+      </div>
     </div>
+  </div>
+</section>
 
-    <hr class="line">
-
-
-
-    <div class="third_one">
-        <div class="gallery" id="gallery">
-            <img id="image" class="peka" src="./resources/images/site3.png" alt="">
-            <img id="image" class="mobile" src="./resources/images/site33.png" alt="">
-            <div class="right">
-                <h2 id="h2_text">3D МОДЕЛИРОВАНИЕ</h3>
-                <h3 id="h4_text" class="light">Это сайт-портфолио, мой первый коммерческий сайт. Я делал его пару недель, учитывая постоянные правки как по просьбе заказчика, так и по моим, возникшим по ходу дела, идеям. Кому нужно резюме в виде pdf файла, когда есть веб сайт?</h3>
-                <h3><a href="http://lev3d.ru" class="light">Перейти на сайт</a></h3>
-            </div>
-        </div>
-
-        <hr class="line">
-
-        <div class="gallery" id="gallery">
-            <img id="image" class="peka" src="./resources/images/site2.png" alt="">
-            <img id="image" class="mobile" src="./resources/images/site22.png" alt="">
-            <div class="right">
-                <h2 id="h2_text">ПСИХОЛОГИЯ</h2>
-                <h3 id="h4_text" class="light">Сайт - визитка. Делал его долго, но только потому что дедлайна как такового не было и постоянно возникали новые идеи где, как и что расположить, чтобы было красиво.</h3>
-                <h3><a href="https://phychology-forme10.github.io/" class="light">Перейти на сайт</a></h3>
-            </div>
-        </div>
+<section id="skills" class="sec container">
+  <div class="sec-head reveal"><span class="mono">02</span><h2>Навыки</h2><i></i></div>
+  <div class="skills-grid">
+    <div class="reveal" data-stagger><h3 class="h3 mono">// программы</h3><div class="skill"><div class="skill-top"><span>КОМПАС-3D</span><span class="mono">основной</span></div><div class="dim"><i style="--v:90%"></i></div></div><div class="skill"><div class="skill-top"><span>Autodesk Inventor</span><span class="mono">основной</span></div><div class="dim"><i style="--v:90%"></i></div></div><div class="skill"><div class="skill-top"><span>AutoCAD</span><span class="mono">уверенно</span></div><div class="dim"><i style="--v:70%"></i></div></div><div class="skill"><div class="skill-top"><span>МКЭ-расчёты</span><span class="mono">опыт расчётов</span></div><div class="dim"><i style="--v:55%"></i></div></div><div class="skill"><div class="skill-top"><span>1С</span><span class="mono">пользователь</span></div><div class="dim"><i style="--v:40%"></i></div></div></div>
+    <div class="reveal">
+      <h3 class="h3 mono">// компетенции</h3><ul class="chips"><li>ЕСКД и ГОСТ</li><li>Полный комплект КД</li><li>Сборочные чертежи и спецификации</li><li>Нестандартное оборудование</li><li>Изостатическое оборудование</li><li>Оснастка и инструмент</li><li>Технологии машиностроения и приборостроения</li><li>Работа с проектной документацией</li></ul>
+      <h3 class="h3 mono">// языки</h3><ul class="chips"><li>Русский — родной</li><li>Английский — B1</li></ul>
     </div>
+  </div>
+</section>
 
-    <div class="forth_one">
-        <div class="contacts">
-            <!-- <h2>КОНТАКТЫ</h2> -->
-            <div class="list_of_contacts">
-                <div class="list">
-                    <a href="" class="email light"><img src="./resources/images/mail.png" alt=""><h3 class="light">roxirovka@mail.ru</h3></a>
-                    <div class="icons">
-                        <a href="https://vk.com/jieba3108" class="icon"><i class="fa-brands fa-vk"></i><h3 class="white light nuna">группа ВК</h3></a>
-                        <a href="https://vk.com/jieba3108" class="icon center"><i class="fa-brands fa-telegram"></i><h3 class="white light nuna">Телеграм</h3></a>
-                        <a href="https://vk.com/jieba3108" class="icon"><i class="fa-brands fa-whatsapp"></i><h3 class="white light nuna">WhatsApp</h3></a>
-                    </div>
-                </div>
-                
-                <h3 class="light white">made by <a href="#" class="white">Rishat</a></h3>
-            </div>
-        </div>
-    </div>
-    
-    
+<section id="exp" class="sec container">
+  <div class="sec-head reveal"><span class="mono">03</span><h2>Опыт</h2><i></i></div>
+  <div class="tl"><span class="tl-fill" aria-hidden="true"></span><article class="job reveal"><div class="job-date mono">Сен 2025 — н. в.<small>1 год 2 мес.</small></div><div><h3>Инженер-конструктор</h3><p class="co"><a href="https://www.progresstech.ru" target="_blank" rel="noopener">Прогресстех</a> · авиационная и аэрокосмическая отрасль</p><ul><li>Разработка и ведение конструкторской документации: чертежи, сборочные чертежи, спецификации</li><li>Проектирование нового оборудования, инструмента и оснастки</li></ul></div></article><article class="job reveal"><div class="job-date mono">Мар 2024 — Сен 2025<small>1 год 7 мес.</small></div><div><h3>Инженер-конструктор</h3><p class="co">АО «Корпорация специального машиностроения» · Москва</p><ul><li>Проектирование изостатического оборудования под индивидуальные требования заказчиков</li><li>3D-модели и чертежи в Autodesk Inventor и КОМПАС-3D</li><li>Полный комплект КД по ГОСТ и ЕСКД: чертежи, спецификации</li></ul></div></article><article class="job reveal"><div class="job-date mono">Сен 2023 — Фев 2024<small>6 мес.</small></div><div><h3>Инженер-исследователь</h3><p class="co">Выксунский металлургический завод · металлургия</p><ul><li>Расчёты процессов прокатки методом конечных элементов</li><li>Разработка и анализ 3D-моделей</li><li>Подготовка отчётной документации</li></ul></div></article></div>
+</section>
 
+<section id="edu" class="sec container">
+  <div class="sec-head reveal"><span class="mono">04</span><h2>Образование</h2><i></i></div>
+  <div class="edu-grid" data-stagger>
+    <div class="card reveal"><span class="mono">2026 · ВЫСШЕЕ</span><h3>МГТУ им. Н. Э. Баумана</h3><p>Факультет машиностроительных технологий. Проектирование технологических машин и комплексов.</p></div>
+    <div class="card reveal"><span class="mono">ДО 2030 · АСПИРАНТУРА</span><h3>Университет «Синергия»</h3><p>Инженерный факультет. Роботы и робототехнические системы.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="sec container contact">
+  <div class="sec-head reveal"><span class="mono">05</span><h2>Контакты</h2><i></i></div>
+  <p class="big reveal">Открыт к предложениям по проектированию оборудования и оснастки.</p>
+  <button class="email reveal" type="button" data-copy="roxirovka@mail.ru"><span>roxirovka@mail.ru</span><small class="mono">нажмите, чтобы скопировать</small></button>
+  <div class="contact-links reveal">
+    <a href="tel:+79273522653">+7 (927) 352-26-53</a>
+    <a href="https://hh.ru/" target="_blank" rel="noopener">Резюме на hh.ru</a>
+    <span>Москва · офис, гибрид или удалённо · редкие командировки</span>
+  </div>
+</section>
+</main>
+<footer class="container"><div class="stamp-wrap"><table class="stamp mono" aria-label="Основная надпись">
+<tr><td>Разраб.</td><td>Булатов Р.</td><td rowspan="2" class="st">РЕЗЮМЕ<small>Инженер-конструктор</small></td><td>Лит.</td><td>Масса</td><td>Масштаб</td></tr>
+<tr><td>Пров.</td><td>—</td><td>У</td><td>—</td><td>1:1</td></tr>
+<tr><td>Дата</td><td data-year>2026</td><td>© Булатов Р.</td><td colspan="2">Лист 1</td><td>Листов 2</td></tr>
+</table></div></footer>
+<div class="toast mono" role="status" aria-live="polite"></div>
+<script src="js/main.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-
-<script type="text/javascript">
-    window.addEventListener('scroll', function(){
-        var header = document.querySelector('.header');
-        header.classList.toggle('sticky', window.scrollY > 0);
-    });
-</script>
-
-<script src="./resources/app.js"></script>
 </html>
